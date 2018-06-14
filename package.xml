@@ -1,0 +1,18 @@
+<package>
+  <name>klaas_robots</name>
+  <version>0.3.5</version>
+  <description>klaas_robots contains descriptions of the turtlebot and bebop drone.</description>
+  <maintainer email="klaas.kelchtermans@esat.kuleuven.be">Klaas Kelchtermans</maintainer>
+
+  <license>BSD</license>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+
+  <!-- Dependencies needed after this package is compiled. -->
+
+  <!-- Dependencies needed only for running tests. -->
+
+</package>
