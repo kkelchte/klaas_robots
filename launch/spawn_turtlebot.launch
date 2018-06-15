@@ -8,4 +8,7 @@
   <param name="robot_description" command="$(find xacro)/xacro --inorder $(find klaas_robots)/urdf/turtlebot3_$(arg model).urdf.xacro" />
 
   <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf" args="-urdf -model turtlebot3_$(arg model) -x $(arg x_pos) -y $(arg y_pos) -Y $(arg Y_pos) -param robot_description" />
+
+  <!-- add RQT to visualize the changes and avoid the launch to quit -->
+  <node pkg="rqt_gui" type="rqt_gui" name="rqt_gui"/>
 </launch>

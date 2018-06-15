@@ -163,9 +163,23 @@
   </link>
 
   <!-- Added by Klaas -->
-  <xacro:include filename="$(find klaas_robots)/urdf/kinect_camera.urdf.xacro" />
+
+  <!-- Kinect -->
+  <!-- <xacro:include filename="$(find klaas_robots)/urdf/kinect_camera.urdf.xacro" />
   <xacro:kinect_camera name="camera" parent="base_link">
     <origin xyz="0.15 0.0 0.5" rpy="0 0 0"/>
-  </xacro:kinect_camera>
+  </xacro:kinect_camera> -->
+
+  <!-- Basic camera -->
+  <xacro:include filename="$(find klaas_robots)/urdf/camera.urdf.xacro" />
+  <xacro:rp_camera name="camera" parent="base_link">
+  <origin xyz="0.02 0.0 0.11"/>
+  </xacro:rp_camera>
+
+  <!-- Wide angle camera -->
+  <!-- <xacro:include filename="$(find klaas_robots)/urdf/wide_angle_camera.urdf.xacro" />
+  <xacro:wide_angle_camera name="camera" parent="base_link">
+  <origin xyz="0.03 0.0 0.11"/>
+  </xacro:wide_angle_camera> -->
 
 </robot>

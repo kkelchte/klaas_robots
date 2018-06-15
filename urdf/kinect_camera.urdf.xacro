@@ -100,8 +100,6 @@
           </plugin>
         </sensor>
         <turnGravityOff>true</turnGravityOff>
-  
-  
       </gazebo>
     </xacro:macro>
 </robot>
