@@ -50,6 +50,7 @@
         <!-- <sensor type="camera" name="camera1">--> 
           <update_rate>20.0</update_rate>
           <camera name="head">
+            <!-- 120 degrees horizontal field of view -->
             <horizontal_fov>2.093</horizontal_fov>
             <image>
               <width>640</width>
