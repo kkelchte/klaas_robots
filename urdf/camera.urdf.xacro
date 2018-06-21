@@ -5,7 +5,7 @@
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
     <xacro:property name="M_PI" value="3.1415926535897931" />
-    <xacro:property name="camera_link" value="0.02" />
+    <xacro:property name="camera_link" value="0.01" />
   
     <xacro:macro name="camera_model" params="name parent *origin">
       <joint name="${name}_joint" type="fixed">
@@ -51,8 +51,8 @@
             <!-- normal raspberry pi camera has 72degrees horizontal view -->
             <horizontal_fov>1.256</horizontal_fov>
             <image>
-              <width>640</width>
-              <height>360</height>
+              <width>410</width>
+              <height>308</height>
               <format>R8G8B8</format>
             </image>
             <clip>

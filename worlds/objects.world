@@ -81,7 +81,7 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <model name='unit_box'>
-      <pose frame=''>-3.19595 2.92533 0.5 0 -0 0</pose>
+      <pose frame=''>1.5 0 0.5 0 -0 0</pose>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -724,13 +724,13 @@
         </link>
       </model>
       <model name='unit_box_0'>
-        <pose frame=''>2.53068 1.19978 0.499995 0 1e-05 0</pose>
+        <pose frame=''>1.5 0 0.5 0 0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>2.53068 1.19978 0.499995 0 1e-05 0</pose>
+          <pose frame=''>1.5 0 0.5 0 0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0.010615 -0.006191 -9.78231 0.012424 0.021225 1.8e-05</acceleration>
-          <wrench>0.010615 -0.006191 -9.78231 0 -0 0</wrench>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_box_1'>

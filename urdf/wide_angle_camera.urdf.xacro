@@ -48,13 +48,13 @@
         <!-- use camera type for rectified images and wideangle for fisheye effect -->
         <sensor type="wideanglecamera" name="camera1">
         <!-- <sensor type="camera" name="camera1">--> 
-          <update_rate>20.0</update_rate>
+          <update_rate>10.0</update_rate>
           <camera name="head">
-            <!-- 120 degrees horizontal field of view -->
-            <horizontal_fov>2.093</horizontal_fov>
+            <!-- 106 degrees horizontal field of view -->
+            <horizontal_fov>1.849</horizontal_fov>
             <image>
-              <width>640</width>
-              <height>360</height>
+              <width>410</width>
+              <height>308</height>
               <format>R8G8B8</format>
             </image>
             <clip>

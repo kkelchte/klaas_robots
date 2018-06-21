@@ -164,22 +164,69 @@
 
   <!-- Added by Klaas -->
 
-  <!-- Kinect -->
-<!--   <xacro:include filename="$(find klaas_robots)/urdf/kinect_camera.urdf.xacro" />
-  <xacro:kinect_camera name="camera" parent="base_link">
-    <origin xyz="0.15 0.0 0.5" rpy="0 0 0"/>
-  </xacro:kinect_camera> -->
+  <!-- camera holder -->
+
+  <joint name="camera_holder_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera_holder"/>
+    <origin xyz="-0.10 0 0.15" rpy="0 0 0"/>
+  </joint>
+
+  <link name="camera_holder">
+    <visual>
+      <origin xyz="0 0 0.04" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.002 0.01 0.12"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.06" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.002 0.01 0.12"/>
+      </geometry>
+    </collision>
+  </link>
+    
+<!--   <joint name="camera_holder_link_joint" type="fixed">
+    <parent link="camera_holder"/>
+    <child link="camera_holder_link"/>
+    <origin xyz="0 0 0.035" rpy="0 0 0"/>
+  </joint> -->
+
+<!--   <link name="camera_holder_link">    
+    <visual>
+      <origin xyz="0.0 0 0" rpy="0 0 0"/>
+      <origin xyz="-0.0615 0 0.24" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.123 0.01 0.002"/>
+      </geometry>
+    </visual>
+ --> <!--     <collision>
+      <origin xyz="0.065 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.123 0.01 0.002"/>
+      </geometry>
+    </collision> -->
+  <!-- </link> -->
+
 
   <!-- Basic camera -->
-  <xacro:include filename="$(find klaas_robots)/urdf/camera.urdf.xacro" />
+<!--   <xacro:include filename="$(find klaas_robots)/urdf/camera.urdf.xacro" />
   <xacro:rp_camera name="camera" parent="base_link">
-  <origin xyz="0.02 0.0 0.11"/>
-  </xacro:rp_camera>
+  <origin xyz="-0.017 0.0 0.24"/>
+  </xacro:rp_camera> -->
+
+  <!-- Kinect -->
+  <!--   <xacro:include filename="$(find klaas_robots)/urdf/kinect_camera.urdf.xacro" />
+  <xacro:kinect_camera name="camera" parent="base_link">
+    <origin xyz="-0.017 0.0 0.24" rpy="0 0 0"/>
+  </xacro:kinect_camera> -->
+
 
   <!-- Wide angle camera -->
-  <!-- <xacro:include filename="$(find klaas_robots)/urdf/wide_angle_camera.urdf.xacro" />
+  <xacro:include filename="$(find klaas_robots)/urdf/wide_angle_camera.urdf.xacro" />
   <xacro:wide_angle_camera name="camera" parent="base_link">
-  <origin xyz="0.03 0.0 0.11"/>
-  </xacro:wide_angle_camera> -->
+  <origin xyz="-0.017 0.0 0.24"/>
+  </xacro:wide_angle_camera>
 
 </robot>

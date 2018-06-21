@@ -20,6 +20,6 @@
  -->
 
   <!-- add RQT to visualize the changes and avoid the launch to quit -->
-  <node pkg="rqt_gui" type="rqt_gui" name="rqt_gui"/>
+  <!-- <node pkg="rqt_gui" type="rqt_gui" name="rqt_gui"/> -->
 
 </launch>
